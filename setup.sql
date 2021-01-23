@@ -1,5 +1,7 @@
 CREATE DATABASE  IF NOT EXISTS `lidardb` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `lidardb`;
+CREATE USER 'lidar'@'%' IDENTIFIED BY 'lidar12';
+GRANT ALL PRIVILEGES ON lidardb.* TO 'lidar'@'%';
 -- MySQL dump 10.13  Distrib 8.0.22, for Win64 (x86_64)
 --
 -- Host: 217.104.40.222    Database: lidardb
